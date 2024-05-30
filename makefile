@@ -3,6 +3,9 @@
 no-op:
 	@echo "No operation"
 
+run:
+	python main.py
+
 create-venv:
 	python -m venv .venv-3.10.5
 
@@ -33,6 +36,7 @@ test:
 help:
 	@echo "Available targets:"
 	@echo "  no-op          - No operation"
+	@echo "  run            - Run the main.py script"
 	@echo "  create-venv    - Create a virtual environment"
 	@echo "  install        - Install the dependencies from requirements.txt"
 	@echo "  uninstall      - Uninstall the dependencies listed in freeze.txt"

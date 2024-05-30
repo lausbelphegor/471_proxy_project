@@ -9,7 +9,7 @@ LISTENING_ADDR = '0.0.0.0'
 LISTENING_PORT = 8080
 FORWARD_PORT = 80
 CACHE_DIR = './cache'
-FILTERED_DOMAINS = ['google.com']
+FILTERED_DOMAINS_FILE = 'filtered_domains.txt'
 LOG_FILE = "proxy_log.txt"
 
 # Ensure cache directory exists
@@ -22,6 +22,7 @@ class ProxyCore:
         self.proxy_thread = None
         self.proxy_running = False
         self.log_callback = log_callback
+        self.filtered_domains = self.load_filtered_domains()
 
     def log(self, message):
         log_message = f"{datetime.datetime.now()} - {message}"
@@ -71,7 +72,7 @@ class ProxyCore:
             host = http_request.headers.get('Host')
             self.log(f"Received request from {addr} for {host}")
 
-            if any(filtered_domain in host for filtered_domain in FILTERED_DOMAINS):
+            if any(filtered_domain in host for filtered_domain in self.filtered_domains):
                 client_socket.send(b"HTTP/1.1 401 Unauthorized\r\n\r\n")
                 self.log(f"Blocked request to {host} from {addr}")
                 client_socket.close()
@@ -105,7 +106,7 @@ class ProxyCore:
             port = int(port)
             self.log(f"Handling HTTPS tunnel for {host}:{port}")
 
-            if any(filtered_domain in host for filtered_domain in FILTERED_DOMAINS):
+            if any(filtered_domain in host for filtered_domain in self.filtered_domains):
                 client_socket.send(b"HTTP/1.1 401 Unauthorized\r\n\r\n")
                 self.log(f"Blocked HTTPS request to {host}")
                 client_socket.close()
@@ -158,17 +159,19 @@ class ProxyCore:
         return request_data
 
     def add_host_to_filter(self, host):
-        if host not in FILTERED_DOMAINS:
-            FILTERED_DOMAINS.append(host)
+        if host not in self.filtered_domains:
+            self.filtered_domains.append(host)
+            self.save_filtered_domains()
             self.log(f"Added {host} to filter list.")
 
     def remove_host_from_filter(self, host):
-        if host in FILTERED_DOMAINS:
-            FILTERED_DOMAINS.remove(host)
+        if host in self.filtered_domains:
+            self.filtered_domains.remove(host)
+            self.save_filtered_domains()
             self.log(f"Removed {host} from filter list.")
 
     def get_filtered_hosts(self):
-        return FILTERED_DOMAINS
+        return self.filtered_domains
 
     def generate_report(self, client_ip):
         try:
@@ -243,6 +246,17 @@ class ProxyCore:
                         print(data)
         except Exception as e:
             print(f"An error occurred: {e}")
+
+    def load_filtered_domains(self):
+        if os.path.exists(FILTERED_DOMAINS_FILE):
+            with open(FILTERED_DOMAINS_FILE, 'r') as file:
+                return [line.strip() for line in file.readlines()]
+        return []
+
+    def save_filtered_domains(self):
+        with open(FILTERED_DOMAINS_FILE, 'w') as file:
+            for domain in self.filtered_domains:
+                file.write(f"{domain}\n")
 
 class HTTPRequest:
     def __init__(self, request_text):

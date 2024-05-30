@@ -1,31 +1,27 @@
 #!/bin/bash
 
+
 sudo hostnamectl set-hostname proxy-server
 
 cat << EOT >> /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 network: {config: disabled}
 EOT
 
-# Update and install necessary packages
-sudo apt-get update
-sudo apt-get install -y python3 python3-pip
+sudo apt update
+sudo apt install software-properties-common -y
+sudo git clone https://github.com/lausbelphegor/471_proxy_project.git /opt/471_proxy_project
 
-# Install proxy server dependencies (example using a simple Python HTTP proxy)
-pip3 install aiohttp
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+sudo apt update
 
-# Create a basic proxy server script (adjust according to your proxy implementation)
-cat <<EOT >> /opt/proxy_server.py
-import asyncio
-from aiohttp import web
+sudo apt install python3.10 python3.10-venv python3.10-dev -y
+sudo ln -sf /usr/bin/python3.10 /usr/bin/python3
+curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3.10
+python3 -m pip install --upgrade pip
+python3 -m venv /opt/471_proxy_project/venv
+source /opt/471_proxy_project/venv/bin/activate
+pip install -r /opt/471_proxy_project/requirements.txt
 
-async def handle_request(request):
-    return web.Response(text="Proxy server running")
-
-app = web.Application()
-app.router.add_route('*', '/{tail:.*}', handle_request)
-
-web.run_app(app, port=8080)
-EOT
 
 # Create a systemd service for the proxy server
 cat <<EOT >> /etc/systemd/system/proxy_server.service
@@ -34,7 +30,7 @@ Description=Proxy Server
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /opt/proxy_server.py
+ExecStart=/usr/bin/python3 /opt/main.py
 Restart=always
 User=nobody
 

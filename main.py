@@ -78,7 +78,7 @@ class ProxyApp:
         messagebox.showinfo("Filtered Hosts", filtered_hosts)
 
     def show_about(self):
-        messagebox.showinfo("About", "Transparent Proxy\nDeveloper: Your Name")
+        messagebox.showinfo("About", "Transparent Proxy\nDeveloper: 20180702093")
 
 if __name__ == "__main__":
     root = tk.Tk()

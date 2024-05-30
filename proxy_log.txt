@@ -1,2 +1,385 @@
 2024-05-27 11:15:25.628420 - Proxy server started.
 2024-05-27 11:15:25.629421 - Listening on 0.0.0.0:8080
+2024-05-30 07:57:50.021832 - Proxy server started.
+2024-05-30 07:57:50.022914 - Listening on 0.0.0.0:8080
+2024-05-30 07:58:35.333140 - Accepted connection from ('127.0.0.1', 59764)
+2024-05-30 07:58:41.659921 - Accepted connection from ('127.0.0.1', 59765)
+2024-05-30 07:58:44.287115 - Accepted connection from ('127.0.0.1', 59766)
+2024-05-30 07:59:03.181675 - Proxy server started.
+2024-05-30 07:59:03.182688 - Listening on 0.0.0.0:8080
+2024-05-30 07:59:07.776698 - Accepted connection from ('127.0.0.1', 59772)
+2024-05-30 07:59:07.782209 - Received request from ('127.0.0.1', 59772) for example.com
+2024-05-30 07:59:07.785214 - Cache miss for example.com - forwarding request.
+2024-05-30 07:59:08.069698 - Cached response for example.com
+2024-05-30 07:59:41.681996 - Accepted connection from ('127.0.0.1', 59864)
+2024-05-30 07:59:41.689006 - Received request from ('127.0.0.1', 59864) for gioui.org:443
+2024-05-30 07:59:41.691007 - Handling HTTPS tunnel for gioui.org:443
+2024-05-30 07:59:41.779063 - Accepted connection from ('127.0.0.1', 59867)
+2024-05-30 07:59:41.785718 - Error handling HTTP client: 'utf-8' codec can't decode byte 0xab in position 401: invalid start byte
+2024-05-30 07:59:42.182697 - Accepted connection from ('127.0.0.1', 59869)
+2024-05-30 07:59:42.186700 - Received request from ('127.0.0.1', 59869) for normandy.cdn.mozilla.net:443
+2024-05-30 07:59:42.192253 - Accepted connection from ('127.0.0.1', 59870)
+2024-05-30 07:59:42.198285 - Handling HTTPS tunnel for normandy.cdn.mozilla.net:443
+2024-05-30 07:59:42.204810 - Received request from ('127.0.0.1', 59870) for aus5.mozilla.org:443
+2024-05-30 07:59:42.216409 - Handling HTTPS tunnel for aus5.mozilla.org:443
+2024-05-30 07:59:42.244004 - Accepted connection from ('127.0.0.1', 59873)
+2024-05-30 07:59:42.252088 - Accepted connection from ('127.0.0.1', 59874)
+2024-05-30 07:59:42.252088 - Received request from ('127.0.0.1', 59873) for location.services.mozilla.com:443
+2024-05-30 07:59:42.263231 - Handling HTTPS tunnel for location.services.mozilla.com:443
+2024-05-30 07:59:42.263231 - Accepted connection from ('127.0.0.1', 59875)
+2024-05-30 07:59:42.263231 - Received request from ('127.0.0.1', 59874) for firefox.settings.services.mozilla.com:443
+2024-05-30 07:59:42.281851 - Handling HTTPS tunnel for firefox.settings.services.mozilla.com:443
+2024-05-30 07:59:42.281851 - Error handling HTTP client: 'utf-8' codec can't decode byte 0xda in position 400: invalid continuation byte
+2024-05-30 07:59:42.284849 - Accepted connection from ('127.0.0.1', 59876)
+2024-05-30 07:59:42.299947 - Received request from ('127.0.0.1', 59876) for services.addons.mozilla.org:443
+2024-05-30 07:59:42.308387 - Handling HTTPS tunnel for services.addons.mozilla.org:443
+2024-05-30 07:59:42.342701 - Accepted connection from ('127.0.0.1', 59879)
+2024-05-30 07:59:42.355221 - Received request from ('127.0.0.1', 59879) for classify-client.services.mozilla.com:443
+2024-05-30 07:59:42.363745 - Handling HTTPS tunnel for classify-client.services.mozilla.com:443
+2024-05-30 07:59:42.423894 - Accepted connection from ('127.0.0.1', 59882)
+2024-05-30 07:59:42.451124 - Error handling HTTP client: 'utf-8' codec can't decode byte 0xda in position 400: invalid continuation byte
+2024-05-30 07:59:42.663690 - Accepted connection from ('127.0.0.1', 59883)
+2024-05-30 07:59:42.685370 - Accepted connection from ('127.0.0.1', 59884)
+2024-05-30 07:59:42.687382 - Received request from ('127.0.0.1', 59883) for www.gstatic.com:443
+2024-05-30 07:59:42.709917 - Received request from ('127.0.0.1', 59884) for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.708918 - Accepted connection from ('127.0.0.1', 59885)
+2024-05-30 07:59:42.712140 - Handling HTTPS tunnel for www.gstatic.com:443
+2024-05-30 07:59:42.732389 - Handling HTTPS tunnel for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.739349 - Received request from ('127.0.0.1', 59885) for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.739349 - Accepted connection from ('127.0.0.1', 59886)
+2024-05-30 07:59:42.772192 - Handling HTTPS tunnel for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.774195 - Accepted connection from ('127.0.0.1', 59887)
+2024-05-30 07:59:42.774195 - Received request from ('127.0.0.1', 59886) for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.823537 - Handling HTTPS tunnel for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.829532 - Accepted connection from ('127.0.0.1', 59888)
+2024-05-30 07:59:42.828550 - Received request from ('127.0.0.1', 59887) for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.882938 - Received request from ('127.0.0.1', 59888) for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.879362 - Accepted connection from ('127.0.0.1', 59890)
+2024-05-30 07:59:42.882938 - Handling HTTPS tunnel for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.926881 - Handling HTTPS tunnel for versioncheck-bg.addons.mozilla.org:443
+2024-05-30 07:59:42.934360 - Accepted connection from ('127.0.0.1', 59894)
+2024-05-30 07:59:42.933362 - Received request from ('127.0.0.1', 59890) for content-signature-2.cdn.mozilla.net:443
+2024-05-30 07:59:42.996335 - Handling HTTPS tunnel for content-signature-2.cdn.mozilla.net:443
+2024-05-30 07:59:43.018131 - Error handling HTTP client: 'utf-8' codec can't decode byte 0xda in position 400: invalid continuation byte
+2024-05-30 07:59:43.024710 - Accepted connection from ('127.0.0.1', 59897)
+2024-05-30 07:59:43.059364 - Accepted connection from ('127.0.0.1', 59900)
+2024-05-30 07:59:43.062140 - Error handling HTTP client: 'utf-8' codec can't decode byte 0x8b in position 398: invalid start byte
+2024-05-30 07:59:43.082058 - Received request from ('127.0.0.1', 59900) for content-signature-2.cdn.mozilla.net:443
+2024-05-30 07:59:43.086055 - Accepted connection from ('127.0.0.1', 59901)
+2024-05-30 07:59:43.101901 - Handling HTTPS tunnel for content-signature-2.cdn.mozilla.net:443
+2024-05-30 07:59:43.115877 - Received request from ('127.0.0.1', 59901) for content-signature-2.cdn.mozilla.net:443
+2024-05-30 07:59:43.150060 - Handling HTTPS tunnel for content-signature-2.cdn.mozilla.net:443
+2024-05-30 07:59:43.194740 - Accepted connection from ('127.0.0.1', 59891)
+2024-05-30 07:59:43.227922 - Accepted connection from ('127.0.0.1', 59892)
+2024-05-30 07:59:43.837171 - Accepted connection from ('127.0.0.1', 59906)
+2024-05-30 07:59:43.885561 - Received request from ('127.0.0.1', 59906) for google.com
+2024-05-30 07:59:43.934458 - Blocked request to google.com from ('127.0.0.1', 59906)
+2024-05-30 07:59:44.019585 - Accepted connection from ('127.0.0.1', 59907)
+2024-05-30 07:59:44.049218 - Received request from ('127.0.0.1', 59907) for google.com
+2024-05-30 07:59:44.086412 - Blocked request to google.com from ('127.0.0.1', 59907)
+2024-05-30 07:59:46.005278 - Accepted connection from ('127.0.0.1', 59910)
+2024-05-30 07:59:46.040944 - Received request from ('127.0.0.1', 59910) for google.com
+2024-05-30 07:59:46.061992 - Blocked request to google.com from ('127.0.0.1', 59910)
+2024-05-30 07:59:53.629675 - Accepted connection from ('127.0.0.1', 59920)
+2024-05-30 07:59:53.684405 - Received request from ('127.0.0.1', 59920) for example.com
+2024-05-30 07:59:53.706669 - Cache miss for example.com - forwarding request.
+2024-05-30 07:59:54.051014 - Cached response for example.com
+2024-05-30 07:59:54.059828 - Accepted connection from ('127.0.0.1', 59922)
+2024-05-30 07:59:54.104820 - Received request from ('127.0.0.1', 59922) for example.com
+2024-05-30 07:59:54.168979 - Cache miss for example.com - forwarding request.
+2024-05-30 07:59:54.483218 - Cached response for example.com
+2024-05-30 07:59:54.525449 - Accepted connection from ('127.0.0.1', 59924)
+2024-05-30 07:59:54.552605 - Received request from ('127.0.0.1', 59924) for example.com
+2024-05-30 07:59:54.583201 - Cache miss for example.com - forwarding request.
+2024-05-30 07:59:54.905801 - Cached response for example.com
+2024-05-30 07:59:54.953170 - Accepted connection from ('127.0.0.1', 59928)
+2024-05-30 07:59:55.007022 - Received request from ('127.0.0.1', 59928) for example.com
+2024-05-30 07:59:55.061820 - Cache miss for example.com - forwarding request.
+2024-05-30 07:59:55.375227 - Cached response for example.com
+2024-05-30 07:59:58.557531 - Accepted connection from ('127.0.0.1', 59932)
+2024-05-30 07:59:58.621148 - Received request from ('127.0.0.1', 59932) for example.com
+2024-05-30 07:59:58.657623 - Cache miss for example.com - forwarding request.
+2024-05-30 07:59:59.010196 - Cached response for example.com
+2024-05-30 08:00:01.975023 - Accepted connection from ('127.0.0.1', 59937)
+2024-05-30 08:00:02.016318 - Received request from ('127.0.0.1', 59937) for example.com
+2024-05-30 08:00:02.040882 - Cache hit for example.com - serving from cache.
+2024-05-30 08:00:02.093342 - Served cached response for example.com to ('127.0.0.1', 59937)
+2024-05-30 08:00:03.990794 - Accepted connection from ('127.0.0.1', 59939)
+2024-05-30 08:00:04.031233 - Received request from ('127.0.0.1', 59939) for example.com
+2024-05-30 08:00:04.064660 - Cache hit for example.com - serving from cache.
+2024-05-30 08:00:04.095513 - Served cached response for example.com to ('127.0.0.1', 59939)
+2024-05-30 08:00:12.298022 - Accepted connection from ('127.0.0.1', 59948)
+2024-05-30 08:00:12.308642 - Accepted connection from ('127.0.0.1', 59949)
+2024-05-30 08:00:12.310654 - Received request from ('127.0.0.1', 59948) for incoming.telemetry.mozilla.org:443
+2024-05-30 08:00:12.323871 - Handling HTTPS tunnel for incoming.telemetry.mozilla.org:443
+2024-05-30 08:00:12.321863 - Received request from ('127.0.0.1', 59949) for incoming.telemetry.mozilla.org:443
+2024-05-30 08:00:12.335422 - Handling HTTPS tunnel for incoming.telemetry.mozilla.org:443
+2024-05-30 08:00:12.867409 - Accepted connection from ('127.0.0.1', 59952)
+2024-05-30 08:00:12.902736 - Received request from ('127.0.0.1', 59952) for detectportal.firefox.com
+2024-05-30 08:00:12.931403 - Cache miss for detectportal.firefox.com - forwarding request.
+2024-05-30 08:00:13.016255 - Cached response for detectportal.firefox.com
+2024-05-30 08:00:13.033365 - Accepted connection from ('127.0.0.1', 59954)
+2024-05-30 08:00:13.076193 - Received request from ('127.0.0.1', 59954) for detectportal.firefox.com
+2024-05-30 08:00:13.105906 - Cache miss for detectportal.firefox.com - forwarding request.
+2024-05-30 08:00:13.182321 - Cached response for detectportal.firefox.com
+2024-05-30 08:00:13.352454 - Accepted connection from ('127.0.0.1', 59958)
+2024-05-30 08:00:13.372563 - Received request from ('127.0.0.1', 59958) for incoming.telemetry.mozilla.org:443
+2024-05-30 08:00:13.387080 - Handling HTTPS tunnel for incoming.telemetry.mozilla.org:443
+2024-05-30 08:00:14.862544 - Accepted connection from ('127.0.0.1', 59961)
+2024-05-30 08:00:14.912344 - Received request from ('127.0.0.1', 59961) for cdn2.ghostery.com:443
+2024-05-30 08:00:14.951641 - Handling HTTPS tunnel for cdn2.ghostery.com:443
+2024-05-30 08:00:16.307006 - Accepted connection from ('127.0.0.1', 59968)
+2024-05-30 08:00:16.328127 - Received request from ('127.0.0.1', 59968) for neverssl.com
+2024-05-30 08:00:16.385953 - Cache miss for neverssl.com - forwarding request.
+2024-05-30 08:00:17.802712 - Cached response for neverssl.com
+2024-05-30 08:03:38.613206 - Proxy server started.
+2024-05-30 08:03:38.614190 - Listening on 0.0.0.0:8080
+2024-05-30 08:03:50.106930 - Added google.com to filter list.
+2024-05-30 08:03:56.967739 - Accepted connection from ('127.0.0.1', 60229)
+2024-05-30 08:03:56.973188 - Received request from ('127.0.0.1', 60229) for google.com
+2024-05-30 08:03:56.975228 - Blocked request to google.com from ('127.0.0.1', 60229)
+2024-05-30 08:04:04.892994 - Removed google.com from filter list.
+2024-05-30 08:04:07.176925 - Accepted connection from ('127.0.0.1', 60238)
+2024-05-30 08:04:07.178926 - Received request from ('127.0.0.1', 60238) for google.com
+2024-05-30 08:04:07.185032 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.298434 - Cached response for google.com
+2024-05-30 08:04:07.302961 - Accepted connection from ('127.0.0.1', 60240)
+2024-05-30 08:04:07.310965 - Received request from ('127.0.0.1', 60240) for google.com
+2024-05-30 08:04:07.314484 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.394208 - Cached response for google.com
+2024-05-30 08:04:07.399214 - Accepted connection from ('127.0.0.1', 60242)
+2024-05-30 08:04:07.407729 - Received request from ('127.0.0.1', 60242) for google.com
+2024-05-30 08:04:07.412241 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.488493 - Cached response for google.com
+2024-05-30 08:04:07.493007 - Accepted connection from ('127.0.0.1', 60245)
+2024-05-30 08:04:07.498012 - Received request from ('127.0.0.1', 60245) for google.com
+2024-05-30 08:04:07.504044 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.579373 - Cached response for google.com
+2024-05-30 08:04:07.584836 - Accepted connection from ('127.0.0.1', 60247)
+2024-05-30 08:04:07.589836 - Received request from ('127.0.0.1', 60247) for google.com
+2024-05-30 08:04:07.594485 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.672879 - Cached response for google.com
+2024-05-30 08:04:07.677877 - Accepted connection from ('127.0.0.1', 60249)
+2024-05-30 08:04:07.683393 - Received request from ('127.0.0.1', 60249) for google.com
+2024-05-30 08:04:07.687394 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.767668 - Cached response for google.com
+2024-05-30 08:04:07.772136 - Accepted connection from ('127.0.0.1', 60252)
+2024-05-30 08:04:07.779138 - Received request from ('127.0.0.1', 60252) for google.com
+2024-05-30 08:04:07.784260 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.863345 - Cached response for google.com
+2024-05-30 08:04:07.867347 - Accepted connection from ('127.0.0.1', 60254)
+2024-05-30 08:04:07.871874 - Received request from ('127.0.0.1', 60254) for google.com
+2024-05-30 08:04:07.877771 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:07.955831 - Cached response for google.com
+2024-05-30 08:04:07.961810 - Accepted connection from ('127.0.0.1', 60256)
+2024-05-30 08:04:07.970820 - Received request from ('127.0.0.1', 60256) for google.com
+2024-05-30 08:04:07.980307 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:08.058004 - Cached response for google.com
+2024-05-30 08:04:08.063466 - Accepted connection from ('127.0.0.1', 60258)
+2024-05-30 08:04:08.069468 - Received request from ('127.0.0.1', 60258) for google.com
+2024-05-30 08:04:08.078030 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:08.158095 - Cached response for google.com
+2024-05-30 08:04:09.623102 - Accepted connection from ('127.0.0.1', 60260)
+2024-05-30 08:04:09.628102 - Received request from ('127.0.0.1', 60260) for google.com
+2024-05-30 08:04:09.633236 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:09.714185 - Cached response for google.com
+2024-05-30 08:04:09.717185 - Accepted connection from ('127.0.0.1', 60262)
+2024-05-30 08:04:09.723702 - Received request from ('127.0.0.1', 60262) for google.com
+2024-05-30 08:04:09.728701 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:09.805747 - Cached response for google.com
+2024-05-30 08:04:09.809747 - Accepted connection from ('127.0.0.1', 60264)
+2024-05-30 08:04:09.816349 - Received request from ('127.0.0.1', 60264) for google.com
+2024-05-30 08:04:09.821366 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:09.902179 - Cached response for google.com
+2024-05-30 08:04:09.906180 - Accepted connection from ('127.0.0.1', 60267)
+2024-05-30 08:04:09.910196 - Received request from ('127.0.0.1', 60267) for google.com
+2024-05-30 08:04:09.916919 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:09.994460 - Cached response for google.com
+2024-05-30 08:04:09.997460 - Accepted connection from ('127.0.0.1', 60269)
+2024-05-30 08:04:10.004023 - Received request from ('127.0.0.1', 60269) for google.com
+2024-05-30 08:04:10.011027 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:10.087937 - Cached response for google.com
+2024-05-30 08:04:10.091465 - Accepted connection from ('127.0.0.1', 60272)
+2024-05-30 08:04:10.097468 - Received request from ('127.0.0.1', 60272) for google.com
+2024-05-30 08:04:10.100972 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:10.182695 - Cached response for google.com
+2024-05-30 08:04:10.187678 - Accepted connection from ('127.0.0.1', 60274)
+2024-05-30 08:04:10.194250 - Received request from ('127.0.0.1', 60274) for google.com
+2024-05-30 08:04:10.198250 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:10.281151 - Cached response for google.com
+2024-05-30 08:04:10.283697 - Accepted connection from ('127.0.0.1', 60276)
+2024-05-30 08:04:10.289717 - Received request from ('127.0.0.1', 60276) for google.com
+2024-05-30 08:04:10.297236 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:10.374509 - Cached response for google.com
+2024-05-30 08:04:10.379509 - Accepted connection from ('127.0.0.1', 60278)
+2024-05-30 08:04:10.384206 - Received request from ('127.0.0.1', 60278) for google.com
+2024-05-30 08:04:10.388096 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:10.467564 - Cached response for google.com
+2024-05-30 08:04:10.475107 - Accepted connection from ('127.0.0.1', 60280)
+2024-05-30 08:04:10.481105 - Received request from ('127.0.0.1', 60280) for google.com
+2024-05-30 08:04:10.486168 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:10.566328 - Cached response for google.com
+2024-05-30 08:04:13.133268 - Accepted connection from ('127.0.0.1', 60284)
+2024-05-30 08:04:13.135277 - Received request from ('127.0.0.1', 60284) for google.com
+2024-05-30 08:04:13.135277 - Accepted connection from ('127.0.0.1', 60285)
+2024-05-30 08:04:13.140277 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.140277 - Received request from ('127.0.0.1', 60285) for contile.services.mozilla.com:443
+2024-05-30 08:04:13.142790 - Handling HTTPS tunnel for contile.services.mozilla.com:443
+2024-05-30 08:04:13.214475 - Cached response for google.com
+2024-05-30 08:04:13.218989 - Accepted connection from ('127.0.0.1', 60288)
+2024-05-30 08:04:13.223515 - Received request from ('127.0.0.1', 60288) for google.com
+2024-05-30 08:04:13.226514 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.303673 - Cached response for google.com
+2024-05-30 08:04:13.312252 - Accepted connection from ('127.0.0.1', 60290)
+2024-05-30 08:04:13.317895 - Received request from ('127.0.0.1', 60290) for google.com
+2024-05-30 08:04:13.324344 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.401033 - Cached response for google.com
+2024-05-30 08:04:13.405010 - Accepted connection from ('127.0.0.1', 60292)
+2024-05-30 08:04:13.410952 - Received request from ('127.0.0.1', 60292) for google.com
+2024-05-30 08:04:13.417147 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.496808 - Cached response for google.com
+2024-05-30 08:04:13.508589 - Accepted connection from ('127.0.0.1', 60294)
+2024-05-30 08:04:13.517712 - Received request from ('127.0.0.1', 60294) for google.com
+2024-05-30 08:04:13.526389 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.608349 - Cached response for google.com
+2024-05-30 08:04:13.617488 - Accepted connection from ('127.0.0.1', 60296)
+2024-05-30 08:04:13.622117 - Received request from ('127.0.0.1', 60296) for google.com
+2024-05-30 08:04:13.628127 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.711665 - Cached response for google.com
+2024-05-30 08:04:13.723924 - Accepted connection from ('127.0.0.1', 60298)
+2024-05-30 08:04:13.728934 - Received request from ('127.0.0.1', 60298) for google.com
+2024-05-30 08:04:13.742149 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.820265 - Accepted connection from ('127.0.0.1', 60300)
+2024-05-30 08:04:13.823988 - Cached response for google.com
+2024-05-30 08:04:13.826933 - Received request from ('127.0.0.1', 60300) for firefox.settings.services.mozilla.com:443
+2024-05-30 08:04:13.828979 - Accepted connection from ('127.0.0.1', 60301)
+2024-05-30 08:04:13.831486 - Handling HTTPS tunnel for firefox.settings.services.mozilla.com:443
+2024-05-30 08:04:13.832532 - Received request from ('127.0.0.1', 60301) for google.com
+2024-05-30 08:04:13.837532 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:13.915281 - Cached response for google.com
+2024-05-30 08:04:13.929912 - Accepted connection from ('127.0.0.1', 60304)
+2024-05-30 08:04:13.939501 - Received request from ('127.0.0.1', 60304) for google.com
+2024-05-30 08:04:13.948033 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:14.038161 - Cached response for google.com
+2024-05-30 08:04:14.048824 - Accepted connection from ('127.0.0.1', 60306)
+2024-05-30 08:04:14.053457 - Received request from ('127.0.0.1', 60306) for google.com
+2024-05-30 08:04:14.069118 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:14.151217 - Cached response for google.com
+2024-05-30 08:04:40.250102 - Accepted connection from ('127.0.0.1', 60332)
+2024-05-30 08:04:40.269697 - Received request from ('127.0.0.1', 60332) for google.com
+2024-05-30 08:04:40.282734 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:40.367144 - Cached response for google.com
+2024-05-30 08:04:40.381266 - Accepted connection from ('127.0.0.1', 60335)
+2024-05-30 08:04:40.393903 - Received request from ('127.0.0.1', 60335) for google.com
+2024-05-30 08:04:40.405457 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:40.486173 - Cached response for google.com
+2024-05-30 08:04:40.498702 - Accepted connection from ('127.0.0.1', 60337)
+2024-05-30 08:04:40.508236 - Received request from ('127.0.0.1', 60337) for google.com
+2024-05-30 08:04:40.512474 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:40.598519 - Cached response for google.com
+2024-05-30 08:04:40.617273 - Accepted connection from ('127.0.0.1', 60339)
+2024-05-30 08:04:40.629760 - Received request from ('127.0.0.1', 60339) for google.com
+2024-05-30 08:04:40.642810 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:40.727482 - Cached response for google.com
+2024-05-30 08:04:40.742176 - Accepted connection from ('127.0.0.1', 60341)
+2024-05-30 08:04:40.753700 - Received request from ('127.0.0.1', 60341) for google.com
+2024-05-30 08:04:40.758729 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:40.842042 - Cached response for google.com
+2024-05-30 08:04:40.851053 - Accepted connection from ('127.0.0.1', 60343)
+2024-05-30 08:04:40.861096 - Received request from ('127.0.0.1', 60343) for google.com
+2024-05-30 08:04:40.875293 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:40.959259 - Cached response for google.com
+2024-05-30 08:04:40.968782 - Accepted connection from ('127.0.0.1', 60345)
+2024-05-30 08:04:40.979321 - Received request from ('127.0.0.1', 60345) for google.com
+2024-05-30 08:04:40.990840 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:41.072896 - Cached response for google.com
+2024-05-30 08:04:41.082005 - Accepted connection from ('127.0.0.1', 60347)
+2024-05-30 08:04:41.091510 - Received request from ('127.0.0.1', 60347) for google.com
+2024-05-30 08:04:41.099516 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:41.179940 - Cached response for google.com
+2024-05-30 08:04:41.192976 - Accepted connection from ('127.0.0.1', 60349)
+2024-05-30 08:04:41.202487 - Received request from ('127.0.0.1', 60349) for google.com
+2024-05-30 08:04:41.207510 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:41.291769 - Cached response for google.com
+2024-05-30 08:04:41.299777 - Accepted connection from ('127.0.0.1', 60351)
+2024-05-30 08:04:41.306325 - Received request from ('127.0.0.1', 60351) for google.com
+2024-05-30 08:04:41.313845 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:41.393316 - Cached response for google.com
+2024-05-30 08:04:50.591082 - Accepted connection from ('127.0.0.1', 60365)
+2024-05-30 08:04:50.603713 - Received request from ('127.0.0.1', 60365) for google.com
+2024-05-30 08:04:50.615224 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:50.698836 - Cached response for google.com
+2024-05-30 08:04:50.703921 - Accepted connection from ('127.0.0.1', 60367)
+2024-05-30 08:04:50.712998 - Received request from ('127.0.0.1', 60367) for google.com
+2024-05-30 08:04:50.723020 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:50.804189 - Cached response for google.com
+2024-05-30 08:04:50.818254 - Accepted connection from ('127.0.0.1', 60369)
+2024-05-30 08:04:50.828308 - Received request from ('127.0.0.1', 60369) for google.com
+2024-05-30 08:04:50.831855 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:50.914801 - Cached response for google.com
+2024-05-30 08:04:50.925313 - Accepted connection from ('127.0.0.1', 60371)
+2024-05-30 08:04:50.930819 - Received request from ('127.0.0.1', 60371) for google.com
+2024-05-30 08:04:50.937825 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:51.022966 - Cached response for google.com
+2024-05-30 08:04:51.035993 - Accepted connection from ('127.0.0.1', 60373)
+2024-05-30 08:04:51.040989 - Received request from ('127.0.0.1', 60373) for google.com
+2024-05-30 08:04:51.053111 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:51.138053 - Cached response for google.com
+2024-05-30 08:04:51.151100 - Accepted connection from ('127.0.0.1', 60375)
+2024-05-30 08:04:51.164129 - Received request from ('127.0.0.1', 60375) for google.com
+2024-05-30 08:04:51.170129 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:51.254082 - Cached response for google.com
+2024-05-30 08:04:51.264103 - Accepted connection from ('127.0.0.1', 60377)
+2024-05-30 08:04:51.274152 - Received request from ('127.0.0.1', 60377) for google.com
+2024-05-30 08:04:51.283222 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:51.369103 - Cached response for google.com
+2024-05-30 08:04:51.378150 - Accepted connection from ('127.0.0.1', 60379)
+2024-05-30 08:04:51.386250 - Received request from ('127.0.0.1', 60379) for google.com
+2024-05-30 08:04:51.393759 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:51.478014 - Cached response for google.com
+2024-05-30 08:04:51.490038 - Accepted connection from ('127.0.0.1', 60381)
+2024-05-30 08:04:51.504450 - Received request from ('127.0.0.1', 60381) for google.com
+2024-05-30 08:04:51.515964 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:51.598126 - Cached response for google.com
+2024-05-30 08:04:51.605634 - Accepted connection from ('127.0.0.1', 60383)
+2024-05-30 08:04:51.616187 - Received request from ('127.0.0.1', 60383) for google.com
+2024-05-30 08:04:51.626699 - Cache miss for google.com - forwarding request.
+2024-05-30 08:04:51.710029 - Cached response for google.com
+2024-05-30 08:05:07.019908 - Accepted connection from ('127.0.0.1', 60397)
+2024-05-30 08:05:07.029425 - Received request from ('127.0.0.1', 60397) for example.com
+2024-05-30 08:05:07.040939 - Cache miss for example.com - forwarding request.
+2024-05-30 08:05:07.337983 - Cached response for example.com
+2024-05-30 08:05:07.345091 - Accepted connection from ('127.0.0.1', 60399)
+2024-05-30 08:05:07.351090 - Received request from ('127.0.0.1', 60399) for example.com
+2024-05-30 08:05:07.359633 - Cache miss for example.com - forwarding request.
+2024-05-30 08:05:07.646846 - Cached response for example.com
+2024-05-30 08:05:07.658891 - Accepted connection from ('127.0.0.1', 60401)
+2024-05-30 08:05:07.663678 - Received request from ('127.0.0.1', 60401) for example.com
+2024-05-30 08:05:07.678189 - Cache miss for example.com - forwarding request.
+2024-05-30 08:05:07.982857 - Cached response for example.com
+2024-05-30 08:05:07.991428 - Accepted connection from ('127.0.0.1', 60403)
+2024-05-30 08:05:07.999511 - Received request from ('127.0.0.1', 60403) for example.com
+2024-05-30 08:05:08.011100 - Cache miss for example.com - forwarding request.
+2024-05-30 08:05:08.286357 - Cached response for example.com
+2024-05-30 08:05:08.297046 - Accepted connection from ('127.0.0.1', 60406)
+2024-05-30 08:05:08.304598 - Received request from ('127.0.0.1', 60406) for example.com
+2024-05-30 08:05:08.319260 - Cache miss for example.com - forwarding request.
+2024-05-30 08:05:08.598750 - Cached response for example.com
+2024-05-30 08:05:08.611795 - Accepted connection from ('127.0.0.1', 60409)
+2024-05-30 08:05:08.622476 - Received request from ('127.0.0.1', 60409) for example.com
+2024-05-30 08:05:08.629437 - Cache miss for example.com - forwarding request.
+2024-05-30 08:05:08.901453 - Cached response for example.com
+2024-05-30 08:05:20.311991 - Added example.com to filter list.
+2024-05-30 08:05:22.688231 - Accepted connection from ('127.0.0.1', 60421)
+2024-05-30 08:05:22.697654 - Received request from ('127.0.0.1', 60421) for example.com
+2024-05-30 08:05:22.738447 - Blocked request to example.com from ('127.0.0.1', 60421)
+2024-05-30 08:05:26.764398 - Accepted connection from ('127.0.0.1', 60426)
+2024-05-30 08:05:26.774914 - Received request from ('127.0.0.1', 60426) for example.com
+2024-05-30 08:05:26.783438 - Blocked request to example.com from ('127.0.0.1', 60426)
+2024-05-30 08:05:36.380421 - Removed example.com from filter list.
+2024-05-30 08:05:39.045455 - Accepted connection from ('127.0.0.1', 60437)
+2024-05-30 08:05:39.055968 - Received request from ('127.0.0.1', 60437) for example.com
+2024-05-30 08:05:39.071991 - Cache miss for example.com - forwarding request.
+2024-05-30 08:05:39.370180 - Cached response for example.com
+2024-05-30 08:05:56.398917 - Accepted connection from ('127.0.0.1', 60455)
+2024-05-30 08:05:57.494071 - Error accepting connections: main thread is not in main loop
