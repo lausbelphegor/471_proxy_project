@@ -7,11 +7,14 @@ except ImportError:
 
 import threading
 from proxy_core import ProxyCore
+from flask import Flask, request, jsonify
 
 class ProxyAppCLI:
     def __init__(self):
         self.proxy_core = ProxyCore(self.log)
         self.running = False
+        self.app = Flask(__name__)
+        self.setup_routes()
 
     def log(self, message):
         print(message)
@@ -20,63 +23,83 @@ class ProxyAppCLI:
         self.proxy_core.start_proxy()
         self.running = True
         self.log("Proxy Server is Running...")
+        return "Proxy Server is Running..."
 
     def stop_proxy(self):
         self.proxy_core.stop_proxy()
         self.running = False
         self.log("Proxy Server is Stopped...")
+        return "Proxy Server is Stopped..."
 
-    def generate_report(self):
-        client_ip = input("Enter client IP address for the report: ")
+    def generate_report(self, client_ip):
         if client_ip:
             report_file_name = self.proxy_core.generate_report(client_ip)
             if report_file_name:
                 self.log(f"Report for {client_ip} saved as {report_file_name}.")
+                return f"Report for {client_ip} saved as {report_file_name}."
             else:
                 self.log("Error generating report.")
+                return "Error generating report."
+        return "Client IP not provided."
 
-    def add_host_to_filter(self):
-        host = input("Enter host to filter: ")
+    def add_host_to_filter(self, host):
         if host:
             self.proxy_core.add_host_to_filter(host)
             self.log(f"{host} added to filter list.")
+            return f"{host} added to filter list."
+        return "Host not provided."
 
-    def remove_host_from_filter(self):
-        host = input("Enter host to remove from filter: ")
+    def remove_host_from_filter(self, host):
         if host:
             self.proxy_core.remove_host_from_filter(host)
             self.log(f"{host} removed from filter list.")
+            return f"{host} removed from filter list."
+        return "Host not provided."
 
     def display_filtered_hosts(self):
         filtered_hosts = self.proxy_core.get_filtered_hosts()
         self.log("Filtered Hosts:\n" + "\n".join(filtered_hosts))
+        return "\n".join(filtered_hosts)
 
     def show_about(self):
-        self.log("Transparent Proxy\nDeveloper: 20180702093")
+        about_message = "Transparent Proxy\nDeveloper: 20180702093"
+        self.log(about_message)
+        return about_message
+
+    def setup_routes(self):
+        @self.app.route('/start', methods=['POST'])
+        def start():
+            return self.start_proxy()
+
+        @self.app.route('/stop', methods=['POST'])
+        def stop():
+            return self.stop_proxy()
+
+        @self.app.route('/report', methods=['POST'])
+        def report():
+            client_ip = request.json.get('client_ip')
+            return self.generate_report(client_ip)
+
+        @self.app.route('/add_host', methods=['POST'])
+        def add_host():
+            host = request.json.get('host')
+            return self.add_host_to_filter(host)
+
+        @self.app.route('/remove_host', methods=['POST'])
+        def remove_host():
+            host = request.json.get('host')
+            return self.remove_host_from_filter(host)
+
+        @self.app.route('/display_hosts', methods=['GET'])
+        def display_hosts():
+            return self.display_filtered_hosts()
+
+        @self.app.route('/about', methods=['GET'])
+        def about():
+            return self.show_about()
 
     def run(self):
-        while True:
-            command = input("Enter command (start, stop, report, add, remove, display, about, exit): ").strip().lower()
-            if command == "start":
-                self.start_proxy()
-            elif command == "stop":
-                self.stop_proxy()
-            elif command == "report":
-                self.generate_report()
-            elif command == "add":
-                self.add_host_to_filter()
-            elif command == "remove":
-                self.remove_host_from_filter()
-            elif command == "display":
-                self.display_filtered_hosts()
-            elif command == "about":
-                self.show_about()
-            elif command == "exit":
-                if self.running:
-                    self.stop_proxy()
-                break
-            else:
-                self.log("Unknown command. Please try again.")
+        self.app.run(port=8081)
 
 if TK_AVAILABLE:
     class ProxyApp:

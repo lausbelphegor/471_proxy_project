@@ -383,3 +383,25 @@
 2024-05-30 08:05:39.370180 - Cached response for example.com
 2024-05-30 08:05:56.398917 - Accepted connection from ('127.0.0.1', 60455)
 2024-05-30 08:05:57.494071 - Error accepting connections: main thread is not in main loop
+2024-05-30 09:26:26.349808 - Proxy server started.
+2024-05-30 09:26:26.350810 - Listening on 0.0.0.0:8080
+2024-05-30 09:28:56.891452 - Accepted connection from ('127.0.0.1', 50154)
+2024-05-30 09:28:56.894282 - Received request from ('127.0.0.1', 50154) for example.com
+2024-05-30 09:28:56.895708 - Cache hit for example.com - serving from cache.
+2024-05-30 09:28:56.896715 - Served cached response for example.com to ('127.0.0.1', 50154)
+2024-05-30 09:29:34.834448 - Added example.com to filter list.
+2024-05-30 09:29:41.484984 - Accepted connection from ('127.0.0.1', 50218)
+2024-05-30 09:29:41.485984 - Received request from ('127.0.0.1', 50218) for example.com
+2024-05-30 09:29:41.485984 - Blocked request to example.com from ('127.0.0.1', 50218)
+2024-05-30 09:30:46.319315 - Removed example.com from filter list.
+2024-05-30 09:30:49.602939 - Accepted connection from ('127.0.0.1', 50310)
+2024-05-30 09:30:49.604450 - Received request from ('127.0.0.1', 50310) for example.com
+2024-05-30 09:30:49.605459 - Cache hit for example.com - serving from cache.
+2024-05-30 09:30:49.606458 - Served cached response for example.com to ('127.0.0.1', 50310)
+2024-05-30 09:31:02.645518 - Accepted connection from ('127.0.0.1', 50330)
+2024-05-30 09:31:02.646525 - Received request from ('127.0.0.1', 50330) for contile.services.mozilla.com:443
+2024-05-30 09:31:02.647523 - Handling HTTPS tunnel for contile.services.mozilla.com:443
+2024-05-30 09:31:02.692584 - Accepted connection from ('127.0.0.1', 50332)
+2024-05-30 09:31:02.694089 - Error handling HTTP client: 'utf-8' codec can't decode byte 0xda in position 400: invalid continuation byte
+2024-05-30 09:31:16.043896 - Proxy server started.
+2024-05-30 09:31:16.044467 - Listening on 0.0.0.0:8080
