@@ -71,3 +71,6 @@ sudo systemctl start proxy
 
 # Check the status of the proxy service
 sudo systemctl status proxy
+
+sudo touch /var/log/proxy.log /var/log/proxy_error.log
+sudo chown proxyuser:proxyuser /var/log/proxy.log /var/log/proxy_error.log

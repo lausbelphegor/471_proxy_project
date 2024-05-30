@@ -101,7 +101,7 @@ class ProxyAppCLI:
     def run(self):
         self.app.run(port=8081)
         
-def create_app_cli_app():
+def create_app():
     proxy_app = ProxyAppCLI()
     return proxy_app.app
 
