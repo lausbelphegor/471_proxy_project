@@ -14,5 +14,26 @@ curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3.10
 sudo git clone https://github.com/lausbelphegor/471_proxy_project.git /opt/471_proxy_project
 sudo python3 -m venv /opt/471_proxy_project/venv
 source /opt/471_proxy_project/venv/bin/activate
-sudo pip3 install -r /opt/471_proxy_project/requirements.txt
-python3 /opt/471_proxy_project/main.py
+pip3 install flask
+# python3 /opt/471_proxy_project/main.py
+
+# systemd service for the proxy server
+sudo tee /etc/systemd/system/proxy.service <<EOF
+[Unit]
+Description=Proxy Server
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/471_proxy_project
+Environment="FLASK_APP=main.py"
+ExecStart=/opt/471_proxy_project/venv/bin/python3 -m flask run --host=
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable proxy
+sudo systemctl start proxy
