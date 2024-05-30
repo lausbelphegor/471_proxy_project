@@ -9,7 +9,7 @@ resource "aws_instance" "dns_server" {
   associate_public_ip_address = true
 
 
-  # user_data = file("userdata/dns.tpl")
+  # user_data = file("userdata/dns.sh")
 
   tags = {
     Name = "proxy-project-dns-server"
@@ -30,7 +30,7 @@ resource "aws_instance" "proxy_server" {
   vpc_security_group_ids      = [aws_security_group.proxy_project_public_sg.id]
   associate_public_ip_address = true
 
-  # user_data = file("userdata/proxy.sh")
+  user_data = file("userdata/proxy.sh")
 
   # connection {
   #   type        = "ssh"
