@@ -100,6 +100,10 @@ class ProxyAppCLI:
 
     def run(self):
         self.app.run(port=8081)
+        
+def create_app_cli_app():
+    proxy_app = ProxyAppCLI()
+    return proxy_app.app
 
 if TK_AVAILABLE:
     class ProxyApp:
@@ -189,3 +193,4 @@ else:
         app = ProxyAppCLI()
         app.start_proxy()
         app.run()
+

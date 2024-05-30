@@ -46,13 +46,19 @@ After=network.target
 [Service]
 User=proxyuser
 WorkingDirectory=/opt/471_proxy_project
-Environment="FLASK_APP=main.py"
+Environment="FLASK_APP=main:create_app"
 ExecStart=/opt/471_proxy_project/venv/bin/flask run --host=0.0.0.0 --port=8081
 Restart=always
+StandardOutput=file:/var/log/proxy.log
+StandardError=file:/var/log/proxy_error.log
 
 [Install]
 WantedBy=multi-user.target
 EOF
+
+sudo systemctl daemon-reload
+sudo systemctl restart proxy
+sudo systemctl status proxy
 
 # Reload systemd to recognize the new service
 sudo systemctl daemon-reload
