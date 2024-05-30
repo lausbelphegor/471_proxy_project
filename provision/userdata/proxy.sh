@@ -21,23 +21,23 @@ python3 -m pip install --upgrade pip
 python3 -m venv /opt/471_proxy_project/venv
 source /opt/471_proxy_project/venv/bin/activate
 pip install -r /opt/471_proxy_project/requirements.txt
+python3 /opt/471_proxy_project/main.py
 
+# # Create a systemd service for the proxy server
+# cat <<EOT >> /etc/systemd/system/proxy_server.service
+# [Unit]
+# Description=Proxy Server
+# After=network.target
 
-# Create a systemd service for the proxy server
-cat <<EOT >> /etc/systemd/system/proxy_server.service
-[Unit]
-Description=Proxy Server
-After=network.target
+# [Service]
+# ExecStart=/usr/bin/python3 /opt/main.py
+# Restart=always
+# User=nobody
 
-[Service]
-ExecStart=/usr/bin/python3 /opt/main.py
-Restart=always
-User=nobody
+# [Install]
+# WantedBy=multi-user.target
+# EOT
 
-[Install]
-WantedBy=multi-user.target
-EOT
-
-# Start and enable the proxy server service
-systemctl start proxy_server
-systemctl enable proxy_server
+# # Start and enable the proxy server service
+# systemctl start proxy_server
+# systemctl enable proxy_server

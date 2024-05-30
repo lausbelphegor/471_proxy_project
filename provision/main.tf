@@ -4,9 +4,9 @@ provider "aws" {
 
 # Create a VPC
 resource "aws_vpc" "proxy_project_vpc" {
-  cidr_block           = var.vpc_cidr
-  enable_dns_support   = false
-  enable_dns_hostnames = true
+  cidr_block = var.vpc_cidr
+  # enable_dns_support   = true
+  # enable_dns_hostnames = true
 
   tags = {
     Name = "proxy-project-vpc"
