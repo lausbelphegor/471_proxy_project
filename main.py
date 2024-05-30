@@ -159,8 +159,10 @@ if TK_AVAILABLE:
     if __name__ == "__main__":
         root = tk.Tk()
         app = ProxyApp(root)
+        app.start_proxy()
         root.mainloop()
 else:
     if __name__ == "__main__":
         app = ProxyAppCLI()
+        app.start_proxy()
         app.run()
