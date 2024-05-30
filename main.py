@@ -66,7 +66,7 @@ class ProxyAppCLI:
             elif command == "add":
                 self.add_host_to_filter()
             elif command == "remove":
-                self.remove_host_to_filter()
+                self.remove_host_from_filter()
             elif command == "display":
                 self.display_filtered_hosts()
             elif command == "about":
