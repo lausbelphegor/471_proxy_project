@@ -163,7 +163,6 @@ class ProxyCore:
                 cache_path = os.path.join(CACHE_DIR, cache_key)
                 if self.read_from_cache(client_socket, cache_path, HOST, addr):
                     return
-
                 self.forward_request(client_socket, http_request, cache_path=cache_path)
             else:
                 self.forward_request(client_socket, http_request, None)
