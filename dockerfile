@@ -16,9 +16,6 @@ COPY . /app
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
 
-# Define environment variable
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
 
 # Run the application
 CMD ["python", "main.py"]
